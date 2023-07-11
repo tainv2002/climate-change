@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+:root {
+    --header-height: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+.text-2xl {
+    font-size: 2.4rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+/* End common CSS */
+
+/* App CSS */
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: #403f3f;
+    color: #fff;
+    box-shadow: 1px 2px rgba(255, 255, 255, 0.05);
+    padding: 8px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title {
+    font-size: 2.2rem;
+}
+.header .infor {
+    font-size: 1.4rem;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.footer .content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer .content .item-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.footer .content .members-list {
+    list-style-type: disc;
+    padding-left: 30px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.main {
+    margin-top: var(--header-height);
+    overflow-x: hidden;
+}
+
+.main .heading {
+    position: relative;
+}
+
+.main .heading .autoplay {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.main .heading .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.main .heading .title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.main .main-content {
+    padding: 40px 0;
+}

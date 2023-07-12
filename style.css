@@ -31,6 +31,11 @@ body {
     margin: 0 auto;
 }
 
+.container-md {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .text-xl {
     font-size: 2rem;
 }
@@ -49,6 +54,31 @@ body {
 
 .mt-16 {
     margin-top: 16px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-96 {
+    margin-top: 96px;
+}
+
+.pl-24 {
+    padding-left: 24px;
+}
+
+.pl-36 {
+    padding-left: 24px;
+}
+
+.comment {
+    text-align: center;
+    font-style: italic;
 }
 
 /* End common CSS */
@@ -80,7 +110,7 @@ body {
 
 .footer {
     background-color: #24262b;
-    padding: 30px 0;
+    padding: 40px 0;
     color: #fff;
 }
 
@@ -137,4 +167,16 @@ body {
 
 .main .main-content {
     padding: 40px 0;
+}
+
+.tackle-title {
+    font-size: 4.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tackle-subtitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
 }
